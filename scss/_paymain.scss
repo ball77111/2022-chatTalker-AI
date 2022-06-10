@@ -1,0 +1,381 @@
+// *{
+//     outline: 1px solid black;
+// }
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.banner-bg-blue {
+    position: absolute;
+    background: #F7F9FD 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 0px 300px;
+    height: 60vh;
+    width: 100%;
+}
+
+// banner + header
+.banner-bg {
+    position: relative;
+    height: 80vh;
+    background-image: url(../asset/img/banner.svg);
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 11px;
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            padding: 30px 0;
+
+            img {
+                display: block;
+                width: 200px;
+            }
+        }
+
+        @include btn(#FF5D50) {
+            padding: 8px 24px;
+
+            &:hover {
+                background-color: #ec2c4c;
+                transform: translate(2px, 2px);
+            }
+        }
+    }
+
+    .banner {
+        margin-top: 100px;
+
+        .banner-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                font-size: $fs-18;
+                color: #56C4C5;
+                font-weight: $fw;
+            }
+
+            h3 {
+                font-size: $fs-48;
+                font-weight: $fw;
+                line-height: 70px;
+                margin: 7px 0 16px;
+            }
+
+            p {
+                font-size: $fs-20;
+            }
+        }
+    }
+}
+
+// pay
+.pay-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 46px;
+    margin-bottom: 48px;
+}
+
+.pay-way-list {
+    display: flex;
+    padding: 0 10px;
+    justify-content: center;
+    margin-bottom: 54px;
+    white-space: nowrap;
+    overflow-x: auto;
+
+    .pay-way-item {
+        width: 130px;
+        margin-right: 16px;
+
+        a {
+            display: block;
+            text-align: center;
+            padding: 12px 32px;
+            background-color: #56C4C5;
+            border-radius: 27px;
+            text-decoration: none;
+            color: #fff;
+
+            &:hover {
+                background-color: #237172;
+            }
+        }
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+
+.pay-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    .basic {
+        width: 49%;
+        box-shadow: 0px 2px 10px #00000014;
+        padding: 10px 29px 0px;
+
+        .basic-title {
+            font-size: 24px;
+            line-height: 35px;
+            padding-bottom: 16px;
+            margin-bottom: 32px;
+            border-bottom: 1px solid #DDDDDD;
+            font-weight: $fw;
+        }
+
+        .basic-content {
+            line-height: 24px;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .basic-price {
+            position: relative;
+            margin-bottom: 32px;
+            display: flex;
+            justify-content: space-between;
+
+            .basic-number {
+                width: 30%;
+
+                span {
+                    font-size: 12px;
+                    line-height: 17px;
+                    margin-bottom: 8px;
+                }
+
+                p {
+                    font-size: 32px;
+                    line-height: 35px;
+                    color: #56C4C5;
+
+                    sub {
+                        position: relative;
+                        left: 10px;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .basic-monprice {
+                width: 30%;
+
+                span {
+                    font-size: 12px;
+                    line-height: 17px;
+                    margin-bottom: 8px;
+                }
+
+                p {
+                    font-size: 32px;
+                    line-height: 35px;
+
+                    sub {
+                        position: relative;
+                        left: 10px;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .basic-price-bg {
+                padding: 24px 32px;
+                background-color: #F5F5F5;
+                border-radius: 12px;
+            }
+
+            &::before {
+                content: '〓';
+                position: absolute;
+                top: 50px;
+                left: 48%;
+            }
+        }
+
+        .basic-merit-list {
+            text-align: left;
+
+            .basic-merit-item {
+                margin-bottom: 16px;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+
+        @include btn(#56C4C5) {
+            margin: 32px 0;
+
+            &:hover {
+                background-color: #237172;
+                transform: translate(2px, 2px);
+            }
+        }
+    }
+
+    .standard {
+        width: 49%;
+        box-shadow: 0px 2px 10px #00000014;
+        padding: 10px 29px 0px;
+
+        .standard-title {
+            font-size: 24px;
+            line-height: 35px;
+            padding-bottom: 16px;
+            margin-bottom: 32px;
+            border-bottom: 1px solid #DDDDDD;
+            font-weight: $fw;
+        }
+
+        .standard-content {
+            line-height: 24px;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .standard-price {
+            position: relative;
+            margin-bottom: 32px;
+            display: flex;
+            justify-content: space-between;
+
+            .standard-number {
+                width: 30%;
+
+                span {
+                    font-size: 12px;
+                    line-height: 17px;
+                    margin-bottom: 8px;
+                }
+
+                p {
+                    font-size: 32px;
+                    line-height: 35px;
+                    color: #56C4C5;
+
+                    sub {
+                        position: relative;
+                        left: 10px;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .standard-monprice {
+                width: 30%;
+
+                span {
+                    font-size: 12px;
+                    line-height: 17px;
+                    margin-bottom: 8px;
+                }
+
+                p {
+                    font-size: 32px;
+                    line-height: 35px;
+
+                    sub {
+                        position: relative;
+                        left: 10px;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .standard-price-bg {
+                padding: 24px 32px;
+                background-color: #F5F5F5;
+                border-radius: 12px;
+            }
+
+            &::before {
+                content: '〓';
+                position: absolute;
+                top: 50px;
+                left: 48%;
+            }
+        }
+
+        .standard-merit-list {
+            text-align: left;
+
+            .standard-merit-item {
+                margin-bottom: 16px;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+
+        @include btn(#56C4C5) {
+            margin: 32px 0;
+
+            &:hover {
+                background-color: #237172;
+                transform: translate(2px, 2px);
+            }
+        }
+    }
+}
+
+// q&a
+.qa-title {
+    margin: 100px 0px 48px;
+    font-size: 32px;
+    font-weight: $fw;
+    text-align: center;
+}
+
+.qa-list {
+    margin-bottom: 100px;
+
+    .qa-list-item {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 2px 10px #00000014;
+        padding: 16px 20px;
+        margin-bottom: 8px;
+        border-radius: 12px;
+        .qa-list-title{
+            display: flex;
+            justify-content: space-between;
+            .active{
+                color: #56C4C5;
+                font-weight: $fw;
+            }
+            img{
+                width: 15px;
+            }
+        }
+        .qa-list-content{
+            margin: 24px 0;
+            font-size: 16px;
+            line-height: 32px;
+        }
+    }
+}
+
+
+
+
+// footer
+.footer {
+    text-align: center;
+    padding: 16px 0;
+    background-color: #F5F5F5;
+}

@@ -1,0 +1,496 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.banner-bg-blue {
+  position: absolute;
+  background: #F7F9FD 0% 0% no-repeat padding-box;
+  border-radius: 0px 0px 0px 300px;
+  height: 60vh;
+  width: 100%;
+}
+
+.banner-bg {
+  position: relative;
+  height: 80vh;
+  background-image: url(../asset/img/banner.svg);
+  background-position: right center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 11px;
+}
+
+.banner-bg .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banner-bg .header a {
+  padding: 30px 0;
+}
+
+.banner-bg .header a img {
+  display: block;
+  width: 200px;
+}
+
+.banner-bg .header .btn {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 12px 32px;
+  border-radius: 27px;
+  background-color: #FF5D50;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 24px;
+}
+
+.banner-bg .header .btn:hover {
+  background-color: #ec2c4c;
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+}
+
+.banner-bg .banner {
+  margin-top: 100px;
+}
+
+.banner-bg .banner .banner-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner-bg .banner .banner-content h1 {
+  font-size: 18px;
+  color: #56C4C5;
+  font-weight: bold;
+}
+
+.banner-bg .banner .banner-content h3 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 70px;
+  margin: 7px 0 16px;
+}
+
+.banner-bg .banner .banner-content p {
+  font-size: 20px;
+}
+
+.pay-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 46px;
+  margin-bottom: 48px;
+}
+
+.pay-way-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 54px;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.pay-way-list .pay-way-item {
+  width: 130px;
+  margin-right: 16px;
+}
+
+.pay-way-list .pay-way-item a {
+  display: block;
+  text-align: center;
+  padding: 12px 32px;
+  background-color: #56C4C5;
+  border-radius: 27px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.pay-way-list .pay-way-item a:hover {
+  background-color: #237172;
+}
+
+.pay-way-list .pay-way-item:last-child {
+  margin-right: 0px;
+}
+
+.pay-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.pay-content .basic {
+  width: 49%;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  padding: 10px 29px 0px;
+}
+
+.pay-content .basic .basic-title {
+  font-size: 24px;
+  line-height: 35px;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #DDDDDD;
+  font-weight: bold;
+}
+
+.pay-content .basic .basic-content {
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.pay-content .basic .basic-price {
+  position: relative;
+  margin-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pay-content .basic .basic-price .basic-number {
+  width: 30%;
+}
+
+.pay-content .basic .basic-price .basic-number span {
+  font-size: 12px;
+  line-height: 17px;
+  margin-bottom: 8px;
+}
+
+.pay-content .basic .basic-price .basic-number p {
+  font-size: 32px;
+  line-height: 35px;
+  color: #56C4C5;
+}
+
+.pay-content .basic .basic-price .basic-number p sub {
+  position: relative;
+  left: 10px;
+  font-size: 12px;
+}
+
+.pay-content .basic .basic-price .basic-monprice {
+  width: 30%;
+}
+
+.pay-content .basic .basic-price .basic-monprice span {
+  font-size: 12px;
+  line-height: 17px;
+  margin-bottom: 8px;
+}
+
+.pay-content .basic .basic-price .basic-monprice p {
+  font-size: 32px;
+  line-height: 35px;
+}
+
+.pay-content .basic .basic-price .basic-monprice p sub {
+  position: relative;
+  left: 10px;
+  font-size: 12px;
+}
+
+.pay-content .basic .basic-price .basic-price-bg {
+  padding: 24px 32px;
+  background-color: #F5F5F5;
+  border-radius: 12px;
+}
+
+.pay-content .basic .basic-price::before {
+  content: '〓';
+  position: absolute;
+  top: 50px;
+  left: 48%;
+}
+
+.pay-content .basic .basic-merit-list {
+  text-align: left;
+}
+
+.pay-content .basic .basic-merit-list .basic-merit-item {
+  margin-bottom: 16px;
+}
+
+.pay-content .basic .basic-merit-list .basic-merit-item:last-child {
+  margin-bottom: 0px;
+}
+
+.pay-content .basic .btn {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 12px 32px;
+  border-radius: 27px;
+  background-color: #56C4C5;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin: 32px 0;
+}
+
+.pay-content .basic .btn:hover {
+  background-color: #237172;
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+}
+
+.pay-content .standard {
+  width: 49%;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  padding: 10px 29px 0px;
+}
+
+.pay-content .standard .standard-title {
+  font-size: 24px;
+  line-height: 35px;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #DDDDDD;
+  font-weight: bold;
+}
+
+.pay-content .standard .standard-content {
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.pay-content .standard .standard-price {
+  position: relative;
+  margin-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pay-content .standard .standard-price .standard-number {
+  width: 30%;
+}
+
+.pay-content .standard .standard-price .standard-number span {
+  font-size: 12px;
+  line-height: 17px;
+  margin-bottom: 8px;
+}
+
+.pay-content .standard .standard-price .standard-number p {
+  font-size: 32px;
+  line-height: 35px;
+  color: #56C4C5;
+}
+
+.pay-content .standard .standard-price .standard-number p sub {
+  position: relative;
+  left: 10px;
+  font-size: 12px;
+}
+
+.pay-content .standard .standard-price .standard-monprice {
+  width: 30%;
+}
+
+.pay-content .standard .standard-price .standard-monprice span {
+  font-size: 12px;
+  line-height: 17px;
+  margin-bottom: 8px;
+}
+
+.pay-content .standard .standard-price .standard-monprice p {
+  font-size: 32px;
+  line-height: 35px;
+}
+
+.pay-content .standard .standard-price .standard-monprice p sub {
+  position: relative;
+  left: 10px;
+  font-size: 12px;
+}
+
+.pay-content .standard .standard-price .standard-price-bg {
+  padding: 24px 32px;
+  background-color: #F5F5F5;
+  border-radius: 12px;
+}
+
+.pay-content .standard .standard-price::before {
+  content: '〓';
+  position: absolute;
+  top: 50px;
+  left: 48%;
+}
+
+.pay-content .standard .standard-merit-list {
+  text-align: left;
+}
+
+.pay-content .standard .standard-merit-list .standard-merit-item {
+  margin-bottom: 16px;
+}
+
+.pay-content .standard .standard-merit-list .standard-merit-item:last-child {
+  margin-bottom: 0px;
+}
+
+.pay-content .standard .btn {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 12px 32px;
+  border-radius: 27px;
+  background-color: #56C4C5;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin: 32px 0;
+}
+
+.pay-content .standard .btn:hover {
+  background-color: #237172;
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+}
+
+.qa-title {
+  margin: 100px 0px 48px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.qa-list {
+  margin-bottom: 100px;
+}
+
+.qa-list .qa-list-item {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  padding: 16px 20px;
+  margin-bottom: 8px;
+  border-radius: 12px;
+}
+
+.qa-list .qa-list-item .qa-list-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.qa-list .qa-list-item .qa-list-title .active {
+  color: #56C4C5;
+  font-weight: bold;
+}
+
+.qa-list .qa-list-item .qa-list-title img {
+  width: 15px;
+}
+
+.qa-list .qa-list-item .qa-list-content {
+  margin: 24px 0;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.footer {
+  text-align: center;
+  padding: 16px 0;
+  background-color: #F5F5F5;
+}
+/*# sourceMappingURL=page.css.map */
