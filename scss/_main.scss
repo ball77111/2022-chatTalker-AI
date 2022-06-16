@@ -3,11 +3,37 @@
     box-sizing: border-box;
 }
 
+// 輪波
+// .swiper {
+//     width: 600px;
+//     height: 300px;
+// }
+.swiper {
+    max-width: 1088px;
+    height: 500px;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-pagination-bullet-active{
+        width: 16px;
+        border-radius: 10px;
+        background-color: #FFD153;
+}
+
 
 .container {
     max-width: 1088px;
     margin: 0 auto;
 }
+
 
 .banner-bg {
     position: relative;
@@ -33,6 +59,7 @@
 
         @include btn(#FF5D50) {
             padding: 8px 24px;
+
             &:hover {
                 background-color: #ec2c4c;
                 transform: translate(2px, 2px);
@@ -365,12 +392,15 @@
 
         .row {
             flex-direction: column-reverse;
+
             .col-6 {
                 width: 100%;
+
                 .technology-list {
                     justify-content: center;
                 }
             }
+
             .col-5 {
                 width: 100%;
                 align-items: center;
@@ -420,46 +450,48 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 24px;
+}
 
-    .assess-card {
-        box-shadow: 0px 2px 10px #00000014;
-        position: relative;
-        background-color: #fff;
-        padding: 48px 32px 24px;
-        width: 30%;
+.assess-card {
+    box-shadow: 0px 2px 10px #00000014;
+    position: relative;
+    background-color: #fff;
+    padding: 48px 32px 24px;
+    // width: 33%;
 
-        .assess-img {
-            width: 80px;
-            border-radius: 50%;
-            position: absolute;
-            top: -60px;
-            left: 32px;
-        }
+    .assess-img {
+        width: 80px;
+        border-radius: 50%;
+        position: absolute;
+        height: initial;
+        top: -60px;
+        left: 32px;
+    }
 
-        .assess-content {
-            padding-bottom: 24px;
-            border-bottom: 1px solid #aaa;
-            margin-bottom: 24px;
-        }
+    .assess-content {
+        padding-bottom: 24px;
+        border-bottom: 1px solid #aaa;
+        margin-bottom: 24px;
+    }
 
-        .assess-company {
-            font-weight: $fw;
-            margin-bottom: 10px;
-        }
+    .assess-company {
+        font-weight: $fw;
+        margin-bottom: 10px;
+    }
 
-        .assess-card-footer {
-            display: flex;
-            justify-content: space-between;
+    .assess-card-footer {
+        display: flex;
+        justify-content: space-between;
 
-            .stars {
-                img {
-                    width: 10px;
-                }
+        .stars {
+            img {
+                width: 10px;
             }
         }
-
     }
+
 }
+
 // pagination
 ul.pagination {
     margin-bottom: 100px;
@@ -492,11 +524,12 @@ ul.pagination {
 }
 
 
-@media(max-width:375px){
+@media(max-width:375px) {
     .assess-title {
         font-size: 28px;
         line-height: 40px;
         margin-bottom: 32px;
+
         &::before {
             width: 77px;
             height: 153px;
@@ -505,12 +538,14 @@ ul.pagination {
             top: 35px;
         }
     }
-    
+
     .assess {
         flex-direction: column;
+
         .assess-card {
             margin: 32px 20px;
             width: 90%;
+
             .assess-img {
                 width: 80px;
                 border-radius: 50%;
@@ -520,7 +555,8 @@ ul.pagination {
             }
         }
     }
-    ul.pagination{
+
+    ul.pagination {
         margin-bottom: -40px;
     }
 }
@@ -547,6 +583,7 @@ ul.pagination {
 
     @include btn(#56C4C5) {
         margin-bottom: 35px;
+
         &:hover {
             background-color: #2e7475;
             transform: translate(2px, 2px);
@@ -554,21 +591,24 @@ ul.pagination {
     }
 }
 
-@media(max-width:375px){
+@media(max-width:375px) {
     .footer-bg {
         background-image: url(../asset/img/footer_sm.svg);
         background-size: contain;
         height: 460px;
+
         .footer-title {
             font-size: 24px;
             line-height: 32px;
             margin-bottom: 30px;
         }
-        .btn{
+
+        .btn {
             margin-bottom: 20px;
         }
     }
 }
+
 // footer
 .footer {
     text-align: center;
